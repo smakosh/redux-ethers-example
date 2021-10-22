@@ -1,13 +1,13 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import { Button, Typography } from "ontwik-ui";
 import { ethers } from "ethers";
-import LoginWithMetamask from "features/auth/modules/LoginWithMetamask";
 import { useSelector, useDispatch } from "react-redux";
+import LoginWithMetamask from "features/auth/modules/LoginWithMetamask";
 import { RootState } from "utils/store";
 import { save, clear } from "features/auth/redux/userSlice";
 import getNetwork from "helpers/getNetwork";
 import getShortAddress from "helpers/getShortAddress";
-import { useEffect } from "react";
 
 const Home = () => {
 	const user = useSelector((state: RootState) => state.user);

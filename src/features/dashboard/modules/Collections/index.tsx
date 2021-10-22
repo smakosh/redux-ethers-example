@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import { Typography } from "ontwik-ui";
 import { useSelector } from "react-redux";
 import { useGetCollectionsQuery } from "utils/openseaApi";
